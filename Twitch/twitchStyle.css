@@ -1,22 +1,27 @@
 /*TODO:
-The footer top calculation not working for some reason
+
 */
 body{
     height: 200vh;
     margin: 0px;
     padding: 0px;
 
-}
-header{
+    /*size variables */
     --header-height: 50px;
-    height: var(--header-height);
-    width: 100%;
-
-    top: 0px;
-
-    position: sticky;
+    --footer-height: 61px;
+    --aside-height: calc(100vh - var(--header-height) - var(--footer-height));
 
     --main-header-color: #18181b;
+    --main-aside-color: #313140;
+    --main-footer-color: #5c16c5;
+
+    /*color variables */
+}
+header{
+    height: var(--header-height);
+    width: 100%;
+    top: 0px;
+    position: sticky;
     background-color: var(--main-header-color);
     /* Breakpoints for search bar
         600px
@@ -24,36 +29,26 @@ header{
 }
 
 aside{ /*Why does the calc not work here? */
-    --aside-height: calc(100vh - (var(--header-height-height) + (var(--footer-height))));
     height: var(--aside-height);
     width: 50px;
-
     top: var(--header-height);
-    
     position: fixed;
-
-    --main-aside-color: #313140;
     background-color: var(--main-aside-color);
     /* Breakpoints for long sidebar
         1000px
     */
 }
 
+footer{
+    height: var(--footer-height);
+    width: 100%;
+    top: calc(var(--header-height) + var(--aside-height));
+    position: fixed;
+    background-color: var(--main-footer-color);
+}
+
 @media only screen and (min-width: 1000px){
     aside{
         width: 250px;
     }
-}
-
-footer{
-    --footer-height: 61px;
-    height: var(--footer-height);
-    width: 100%;
-
-    top: calc(var(--header-height) + var(--aside-height));
-
-    position: fixed;
-
-    --main-footer-color: #5c16c5;
-    background-color: var(--main-footer-color);
 }
