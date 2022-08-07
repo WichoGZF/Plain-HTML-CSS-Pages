@@ -1,10 +1,8 @@
 /*TODO:
 
 */
-body{
-    height: 200vh;
-    margin: 0px;
-    padding: 0px;
+html {
+    font-family: Inter,Roobert,Helvetica Neue,Helvetica,Arial,sans-serif;
 
     /*size variables */
     --header-height: 50px;
@@ -16,19 +14,56 @@ body{
     --main-footer-color: #5c16c5;
 
     /*color variables */
+
+    --main-text-color: #efeff1
 }
-header{
+
+*{
+    color: var(--main-text-color);
+    margin: 0px
+}
+
+body {
+    height: 200vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
     height: var(--header-height);
     width: 100%;
     top: 0px;
     position: sticky;
     background-color: var(--main-header-color);
-    /* Breakpoints for search bar
-        600px
-     */
+    display: flex;
+    flex: 200px auto
 }
 
-aside{ /*Why does the calc not work here? */
+#header-icon-section {
+    display: flex;
+}
+
+#header-search-section {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0;
+}
+
+/* Breakpoints for search bar
+700px:
+when smaller join search icon to right icon section
+and turn browser button into the copy icon.
+
+*/
+
+#header-twitch-logo {
+    margin: 5px;
+}
+
+
+
+nav {
+    /*Why does the calc not work here? */
     height: var(--aside-height);
     width: 50px;
     top: var(--header-height);
@@ -37,9 +72,53 @@ aside{ /*Why does the calc not work here? */
     /* Breakpoints for long sidebar
         1000px
     */
+    display: flex;
+    flex-direction: column;
 }
 
-footer{
+#nav-menu{
+    padding: 0px;
+}
+
+#nav-menu>li{
+    display: grid; 
+    grid-template-columns: 40px 3fr 1fr;
+    grid-template-rows: 20px 20px;
+}
+
+#nav-menu-icon{
+    height: 40px;
+    width: 40px;
+    background-color: gray;
+    border-radius: 50%;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#nav-menu-streamer{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#nav-menu-game{
+    grid-column: 2/3;
+    grid-row: 2/3
+}
+#nav-menu-viewers-div{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+}
+#nav-menu-viewers-icon{
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: red;
+    border-radius: 50%;
+}
+
+
+footer {
     height: var(--footer-height);
     width: 100%;
     top: calc(var(--header-height) + var(--aside-height));
@@ -47,8 +126,8 @@ footer{
     background-color: var(--main-footer-color);
 }
 
-@media only screen and (min-width: 1000px){
-    aside{
+@media only screen and (min-width: 1000px) {
+    nav {
         width: 250px;
     }
 }

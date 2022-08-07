@@ -19,20 +19,44 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header>
-        <section>
+        <section id="header-icon-section">
             <img id="header-twitch-logo" src="./svg/twitch-logo.svg" />
             <button>Browse</button>
             <img id="header-three-dots" src="./svg/three-dots.svg"/>
         </section>
-        <section>
-
+        <section id="header-search-section">
+            <input type="search" id="header-search-input"/>
+            <button><img id="header-search-input-icon" src="./svg/search.svg"></button>
         </section>
-        <section>
-
+        <section id="header-icon-section">
+            <img id="header-crown-logo" src="./svg/king-icon.svg"/>
+            <button>Log in</button>
+            <button>Sign Up</button>
+            <img id="header-user-icon" src="svg/user-icon.svg">
         </section>
     </header>
     <nav>
-
+        <label for="nav-menu">RECOMMENDED CHANNELS</label>
+        <menu id="nav-menu">
+            <li>
+                <div id="nav-menu-icon"></div>
+                <h3 id="nav-menu-streamer">Streamer</h3>
+                <p id="nav-menu-game">Game</p>
+                <div id="nav-menu-viewers-div">
+                    <div id="nav-menu-viewers-icon"></div>
+                    <p>99.9K</p>
+                </div>
+            </li>
+            <li>
+                <div id="nav-menu-icon"></div>
+                <h3 id="nav-menu-streamer">Streamer</h3>
+                <p id="nav-menu-game">Game</p>
+                <div id="nav-menu-viewers-div">
+                    <div id="nav-menu-viewers-icon"></div>
+                    <p>99.9K</p>
+                </div>
+            </li>
+        </menu>
     </nav>
 
     <body>
