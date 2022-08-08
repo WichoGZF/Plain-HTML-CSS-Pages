@@ -51,8 +51,91 @@ main{
     width: var(--main-width);
     top: var(--header-height);
     left: var(--aside-left-width);
+    display: flex;
+    flex-direction: column;
+}
+#main-post-section{
+    display:grid;
+    grid-template-columns: 60px calc(100% - 140px) 80px ;
+    grid-template-rows: 60px 40px 50px;
+}   
+#main-post-section-avatar{
+    height: 60px;
+    width: 60px;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
+#main-post-section-input{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+#main-post-section-input-scope{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+#main-post-section-icons{
+    display: flex;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    gap: 10px;
+}
+
+.main-post-section-little-icon{
+    height: 30px;
+    width: 30px;
+}
+
+#main-post-section-button{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+#main-showtweets-section-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: 60px 1;
+    grid-template-rows: 30px 30px 350px 30px;
+}
+.post-icon{
+    height: 60px;
+    width: 60px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+#post-header{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+     justify-content: space-between;
+}
+
+#post-header-text{
+    display:flex;
+}
+.post-header-threebars{
+    height:30px;
+    width: 30px;
+}
+
+.post-image{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#post-buttons{
+    display: flex;
+    grid-column: 2/3;
+    grid-row:  4/5;
+}
 #aside-left{
     width: var(--aside-left-width);
     height: 100vh;

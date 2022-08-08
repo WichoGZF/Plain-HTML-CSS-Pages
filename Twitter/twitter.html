@@ -4,150 +4,197 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./twitter.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./twitter.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header>
-            <div id="header-title">
-                <h3>Home</h3>
-                <button id="header-title-button"></button>
+    <header>
+        <div id="header-title">
+            <h3>Home</h3>
+            <button id="header-title-button"></button>
+        </div>
+        <div id="header-search">
+            <img id="header-search-icon" src="./Circle.svg">
+            <input type="search" placeholder="Search">
+        </div>
+    </header>
+    <main>
+        <section id="main-post-section">
+            <img id="main-post-section-avatar" src="./Circle.svg">
+            <input id="main-post-section-input" type="text" placeholder="What's happenin'">
+            <p id="main-post-section-input-scope">Everyone can reply</p>
+            <div id="main-post-section-icons">
+                <img class="main-post-section-little-icon" src="./Circle.svg">
+                <img class="main-post-section-little-icon" src="./Circle.svg">
+                <img class="main-post-section-little-icon" src="./Circle.svg">
+                <img class="main-post-section-little-icon" src="./Circle.svg">
+                <img class="main-post-section-little-icon" src="./Circle.svg">
+                <img class="main-post-section-little-icon" src="./Circle.svg">
             </div>
-            <div id="header-search">
-                <img id="header-search-icon" src="./Circle.svg">
-                <input type="search" placeholder="Search">
+            <button id="main-post-section-button">Tweet</button>
+        </section>
+        <section id="main-showtweets-section">
+            <a href>
+                <div id="main-showtweets-section-div">
+                    <p>Show XXX Tweets</p>
+                </div>
+            </a>
+        </section>
+        <section id="main-posts-section">
+            <div class="post">
+                <img class="post-icon" href="./Circle.svg">
+                <div id="post-header">
+                    <div id="post-header-text">
+                        <h3>Username</h3>
+                        <p>@Username - 1m</p>
+                    </div>
+                    <img class="post-header-threebars" href="./Circle.svg">
+                </div>
+                <img class="post-image" href="./Square.svg">
+                <div id="post-buttons">
+                    <button>44</button>
+                    <button>44</button>
+                    <button>44</button>
+                    <button></button>
+                </div>
             </div>
-        </header>
-        <main></main>
-        <aside id="aside-left">
-            <menu id="aside-left-options-menu">
-                <il id="aside-left-options-menu-entry">
-                    <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
-                </il>
-                <il id="aside-left-options-menu-entry">
-                    <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
-                    <h3 id="aside-left-options-menu-entry-name">Section</h3>
-                </il>
-                <il id="aside-left-options-menu-entry">
-                    <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
-                    <h3 id="aside-left-options-menu-entry-name">Section</h3>
-                </il>
-                <il id="aside-left-options-menu-entry">
-                    <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
-                    <h3 id="aside-left-options-menu-entry-name">Section</h3>
-                </il>
-                <il id="aside-left-options-menu-entry">
-                    <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
-                    <h3 id="aside-left-options-menu-entry-name">Section</h3>
-                </il>
-                <il id="aside-left-options-menu-entry">
-                    <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
-                    <h3 id="aside-left-options-menu-entry-name">Section</h3>
-                </il>
-                <il id="aside-left-options-menu-entry">
-                    <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
-                    <h3 id="aside-left-options-menu-entry-name">Section</h3>
-                </il>
-                <il id="aside-left-options-menu-entry">
-                    <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
-                    <h3 id="aside-left-options-menu-entry-name">Section</h3>
-                </il>
-                
-                <il id="aside-left-options-menu-entry">
-                    <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
-                    <h3 id="aside-left-options-menu-entry-name">Section</h3>
-                </il>
-                <il id="aside-left-options-menu-button"> 
-                    <p>Tweet</p>
-                </il>
-            </menu>
-            <div id="aside-left-user">
-                <img id="aside-left-user-icon" src="./Circle.svg">
-                <b id="aside-left-user-bold">Username</b>
-                <p id="aside-left-user-subtext">@Username</p>
-                <img id="aside-left-user-three-icon" src="Circle.svg">
+            <div class="post">
+
             </div>
-        </aside>       
-        <aside id="aside-right">
-            <section class="aside-right-container">
-                <h3 id="aside-right-container-title">What's going on</h3>
-                <div id="aside-right-container-content">
-                    <p class="right-sidebar-undertext">Overtext</p>
-                    <h3 id="aside-right-container-content-title">Some new entry</h3>
-                    <img id="aside-right-container-content-square" src="./Square.svg">
-                </div>
-                <div id="aside-right-container-content">
-                    <p class="right-sidebar-undertext">Overtext</p>
-                    <h3 id="aside-right-container-content-title">Some new trend</h3>
-                    <p class="right-sidebar-undertext-two">Undertext</p>
-                    <img id="right-sidebar-dot-icon" src="./Circle.svg">
-                </div>
-                <div id="aside-right-container-content">
-                    <p class="right-sidebar-undertext">Overtext</p>
-                    <h3 id="aside-right-container-content-title">Some new trend</h3>
-                    <p class="right-sidebar-undertext-two">Undertext</p>
-                    <img id="right-sidebar-dot-icon" src="./Circle.svg">
-                </div>
-                <div id="aside-right-container-content">
-                    <p class="right-sidebar-undertext">Overtext</p>
-                    <h3 id="aside-right-container-content-title">Some new entry</h3>
-                    <img id="aside-right-container-content-square" src="./Square.svg">
-                </div>
-                <div id="aside-right-container-content">
-                    <p class="right-sidebar-undertext">Overtext</p>
-                    <h3 id="aside-right-container-content-title">Some new entry</h3>
-                    <img id="aside-right-container-content-square" src="./Square.svg">
-                </div>
-                <div id="aside-right-container-showmore">
-                    <a href="">Show more</a>
-                </div>
-            </section>
-            <section class="aside-right-container">
-                <h3 id="aside-right-container-title">
-                    Who to follow
-                </h3>
-                <div id="aside-right-container-user">
-                    <img id="aside-right-container-user-icon" src="./Circle.svg">
-                    <h3 id="aside-right-container-user-name">Username</h3>
-                    <p id="aside-right-container-user-adress">@Username</p>
-                    <button id="aside-right-container-user-follow">Follow</button>
-                </div>
-                <div id="aside-right-container-user">
-                    <img id="aside-right-container-user-icon" src="./Circle.svg">
-                    <h3 id="aside-right-container-user-name">Username</h3>
-                    <p id="aside-right-container-user-adress">@Username</p>
-                    <button id="aside-right-container-user-follow">Follow</button>
-                </div>
-                <div id="aside-right-container-user">
-                    <img id="aside-right-container-user-icon" src="./Circle.svg">
-                    <h3 id="aside-right-container-user-name">Username</h3>
-                    <p id="aside-right-container-user-adress">@Username</p>
-                    <button id="aside-right-container-user-follow">Follow</button>
-                </div>
-                <div id="aside-right-container-showmore">
-                    <a href="">Show more</a>
-                </div>
-            </section>
-            <footer id="aside-right-footer">
-                <div id="aside-right-footer-links">
-                    <a href="">Terms of service</a>
-                    <a href="">Privacy policy</a>
-                    <a href="">Cookie policy</a>
-                    <a href="">Accessibility</a>
-                    <a href="">Ads info</a>
-                    <a href="">More...</a>
-                </div>
-                <p>© 2022 Twitter, Inc.</p>
-            </footer>
-        </aside> 
-        <script src="" async defer></script>
-    </body>
+        </section>
+    </main>
+    <aside id="aside-left">
+        <menu id="aside-left-options-menu">
+            <il id="aside-left-options-menu-entry">
+                <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
+            </il>
+            <il id="aside-left-options-menu-entry">
+                <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
+                <h3 id="aside-left-options-menu-entry-name">Section</h3>
+            </il>
+            <il id="aside-left-options-menu-entry">
+                <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
+                <h3 id="aside-left-options-menu-entry-name">Section</h3>
+            </il>
+            <il id="aside-left-options-menu-entry">
+                <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
+                <h3 id="aside-left-options-menu-entry-name">Section</h3>
+            </il>
+            <il id="aside-left-options-menu-entry">
+                <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
+                <h3 id="aside-left-options-menu-entry-name">Section</h3>
+            </il>
+            <il id="aside-left-options-menu-entry">
+                <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
+                <h3 id="aside-left-options-menu-entry-name">Section</h3>
+            </il>
+            <il id="aside-left-options-menu-entry">
+                <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
+                <h3 id="aside-left-options-menu-entry-name">Section</h3>
+            </il>
+            <il id="aside-left-options-menu-entry">
+                <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
+                <h3 id="aside-left-options-menu-entry-name">Section</h3>
+            </il>
+
+            <il id="aside-left-options-menu-entry">
+                <img id="aside-left-options-menu-entry-icon" src="./Circle.svg">
+                <h3 id="aside-left-options-menu-entry-name">Section</h3>
+            </il>
+            <il id="aside-left-options-menu-button">
+                <p>Tweet</p>
+            </il>
+        </menu>
+        <div id="aside-left-user">
+            <img id="aside-left-user-icon" src="./Circle.svg">
+            <b id="aside-left-user-bold">Username</b>
+            <p id="aside-left-user-subtext">@Username</p>
+            <img id="aside-left-user-three-icon" src="Circle.svg">
+        </div>
+    </aside>
+    <aside id="aside-right">
+        <section class="aside-right-container">
+            <h3 id="aside-right-container-title">What's going on</h3>
+            <div id="aside-right-container-content">
+                <p class="right-sidebar-undertext">Overtext</p>
+                <h3 id="aside-right-container-content-title">Some new entry</h3>
+                <img id="aside-right-container-content-square" src="./Square.svg">
+            </div>
+            <div id="aside-right-container-content">
+                <p class="right-sidebar-undertext">Overtext</p>
+                <h3 id="aside-right-container-content-title">Some new trend</h3>
+                <p class="right-sidebar-undertext-two">Undertext</p>
+                <img id="right-sidebar-dot-icon" src="./Circle.svg">
+            </div>
+            <div id="aside-right-container-content">
+                <p class="right-sidebar-undertext">Overtext</p>
+                <h3 id="aside-right-container-content-title">Some new trend</h3>
+                <p class="right-sidebar-undertext-two">Undertext</p>
+                <img id="right-sidebar-dot-icon" src="./Circle.svg">
+            </div>
+            <div id="aside-right-container-content">
+                <p class="right-sidebar-undertext">Overtext</p>
+                <h3 id="aside-right-container-content-title">Some new entry</h3>
+                <img id="aside-right-container-content-square" src="./Square.svg">
+            </div>
+            <div id="aside-right-container-content">
+                <p class="right-sidebar-undertext">Overtext</p>
+                <h3 id="aside-right-container-content-title">Some new entry</h3>
+                <img id="aside-right-container-content-square" src="./Square.svg">
+            </div>
+            <div id="aside-right-container-showmore">
+                <a href="">Show more</a>
+            </div>
+        </section>
+        <section class="aside-right-container">
+            <h3 id="aside-right-container-title">
+                Who to follow
+            </h3>
+            <div id="aside-right-container-user">
+                <img id="aside-right-container-user-icon" src="./Circle.svg">
+                <h3 id="aside-right-container-user-name">Username</h3>
+                <p id="aside-right-container-user-adress">@Username</p>
+                <button id="aside-right-container-user-follow">Follow</button>
+            </div>
+            <div id="aside-right-container-user">
+                <img id="aside-right-container-user-icon" src="./Circle.svg">
+                <h3 id="aside-right-container-user-name">Username</h3>
+                <p id="aside-right-container-user-adress">@Username</p>
+                <button id="aside-right-container-user-follow">Follow</button>
+            </div>
+            <div id="aside-right-container-user">
+                <img id="aside-right-container-user-icon" src="./Circle.svg">
+                <h3 id="aside-right-container-user-name">Username</h3>
+                <p id="aside-right-container-user-adress">@Username</p>
+                <button id="aside-right-container-user-follow">Follow</button>
+            </div>
+            <div id="aside-right-container-showmore">
+                <a href="">Show more</a>
+            </div>
+        </section>
+        <footer id="aside-right-footer">
+            <div id="aside-right-footer-links">
+                <a href="">Terms of service</a>
+                <a href="">Privacy policy</a>
+                <a href="">Cookie policy</a>
+                <a href="">Accessibility</a>
+                <a href="">Ads info</a>
+                <a href="">More...</a>
+            </div>
+            <p>© 2022 Twitter, Inc.</p>
+        </footer>
+    </aside>
+    <script src="" async defer></script>
+</body>
+
 </html>
