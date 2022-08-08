@@ -1,0 +1,134 @@
+/*
+1300px sidebar shrinking
+1000px aside disappears
+*/
+
+html{
+    font-family: Inter,Roobert,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+body{
+    margin: 0px;
+    --header-height: 50px;
+    --main-width: 600px;
+    --aside-left-width: 300px;
+    --aside-right-width: calc(var(--aside-left-width) + var(--main-width));
+}
+
+header{
+    height: var(--header-height);
+    width: calc(100% - var(--aside-left-width));
+    position: absolute;
+    display: flex;
+    border-right: 1px gray solid;
+    border-left: 1px gray solid;
+    left: var(--aside-left-width);
+    top: 0px;
+    position: sticky;
+
+}
+
+#header-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+#header-title-button{
+    height: 40px;
+    width: 40px;
+}
+#header-search{
+    border-radius: 10px;
+    background-color: gray;
+    flex-grow: 0.6;
+    display: flex;
+    justify-content: center;
+}
+
+
+main{
+    position: absolute;
+    width: var(--main-width);
+    top: var(--header-height);
+    left: var(--aside-left-width);
+}
+
+#aside-left{
+    width: var(--aside-left-width);
+    height: 100vh;
+    border-right:1px gray solid;
+    border-right: 1px gray solid;
+    top:0px;
+    left: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+#aside-left-options-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#aside-left-options-menu-entry{
+    display: flex;
+    align-items: center;
+}
+#aside-left-options-menu-entry-icon{
+    height: 40px;
+    width: 40px;
+}
+#aside-left-options-menu-entry-name{
+    margin: 0px;
+}
+
+#aside-left-options-menu-button{
+    background-color: blue;
+    border-radius: 30px;
+    display:flex;
+    justify-content: center;
+}
+#aside-left-user{
+    display: grid;
+    grid-template-columns: 40px calc(100% - 80px) 40px;
+    grid-template-rows: 20px 20px;
+}
+
+#aside-left-user-icon{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    height: 40px;
+    width: 40px;
+}
+
+#aside-left-user-bold{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#aside-left-user-subtext{       
+    grid-column: 2/3;
+    grid-row: 2/3;      
+    margin: 0px;         
+}
+#aside-left-user-three-icon{
+    height: 20px;
+    width: 20px;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+
+#aside-right{
+    width: var(--aside-right-width);
+    position: absolute;
+    left: calc(var(--aside-left-width) + var(--main-width));
+    top: var(--header-height);
+    border-left: 1px gray solid;
+    
+}
