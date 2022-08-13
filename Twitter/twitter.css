@@ -102,7 +102,7 @@ main{
 
 .post{
     display: grid;
-    grid-template-columns: 60px 1;
+    grid-template-columns: 60px 1fr;
     grid-template-rows: 30px 30px 350px 30px;
 }
 .post-icon{
@@ -121,6 +121,16 @@ main{
 
 #post-header-text{
     display:flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#post-header-text-user{
+    margin: 0px;
+    margin-right: 5px;
+}
+
+#post-header-text-id{
+    margin: 0px;
 }
 .post-header-threebars{
     height:30px;
