@@ -45,12 +45,10 @@ header{
     left: var(--aside-left-width);
     top: 0px;
     z-index:99999;
+    display:flex;
 }
 
 #header-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 600px;
     height: 100%;
     background: white;
@@ -61,19 +59,36 @@ header{
     border-right-width: 1px;
     border-style: solid;
 }
+
+#header-title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 #header-title-button{
     height: 40px;
     width: 40px;
 }
 #header-search{
-    background-color: gray;
-    position: absolute;
-    left: var(--main-width);
-    top: 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+}
+
+#header-search-wrap{
     display: flex;
     justify-content: center;
-    width: calc(100% - var(--main-width));
-    height: 100%;
+    width: 350px;
+    height: 85%;
+    background-color: gray;
+    border-radius: 2rem;
+    margin-left: 2rem;
 }
 
 
@@ -269,10 +284,15 @@ main{
     top: var(--header-height);
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .aside-right-container{
     background-color: gray;
+    margin-left: 2rem;
+    width: 350px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -356,6 +376,8 @@ grid-template-rows: 20px 20px;
 }
 
 #aside-right-footer{
+    margin-left: 2rem;
+    width: 350px;
     display: flex;
     flex-direction: column;
     font-size: 0.8rem;
