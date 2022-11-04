@@ -26,12 +26,15 @@ body{
     --right-sidebar-left-padding: 32px;
     --right-sidebar-right-padding: 64px;
 
-}
+    --right-side-background-color: rgb(247, 249, 249);
+    --gray-text-color: rgb(83, 100, 113); 
+    --blue-main-color: rgb(29, 155, 240); 
+    --main-border-color: rgb(226, 233, 233);
+    --aside-button-hover-color: rgb(211, 218, 223);
+}   
 @media screen and (max-width: 1200px){
     body{
     --header-height: 50px;
-    --main-width: 598px;
-    --aside-left-width: 250px;
     --aside-right-width: 350px;
 
     }
@@ -58,6 +61,7 @@ header{
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
+    border-color: var(--main-border-color);
 }
 
 #header-title-container{
@@ -86,7 +90,7 @@ header{
     justify-content: center;
     width: 350px;
     height: 85%;
-    background-color: gray;
+    background-color: rgb(226, 233, 233);
     border-radius: 2rem;
     margin-left: 2rem;
 }
@@ -106,6 +110,7 @@ main{
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
+    border-color: var(--main-border-color)
 }
 #main-post-section{
     display:grid;
@@ -161,6 +166,8 @@ main{
     border-width: 0px;
     border-top-width: 1px;
     border-bottom-width: 1px;
+    border-color: var(--main-border-color)
+
 }
 
 #main-posts-section{
@@ -181,6 +188,8 @@ main{
     border-width: 0px;
     border-bottom-width: 1px;
     border-style: solid;
+    border-color: var(--main-border-color)
+ 
 }
 
 .post-icon{
@@ -212,6 +221,7 @@ main{
 
 #post-header-text-id{
     margin: 0px;
+    color: var(--gray-text-color)
 }
 .post-header-threebars{
     height:30px;
@@ -261,7 +271,7 @@ main{
 
 #aside-left{
     width: var(--aside-left-width);
-    min-width: 275px;
+    min-width: 250px;
     height: 100vh;
     top:0px;
     left: 0px;
@@ -269,6 +279,23 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: end;
+}
+
+#aside-left-icon{
+    padding: 0px; 
+    border: 0px;
+    height: 50px;
+    width: 50px;
+    border-radius: 90%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 1.5rem;
+}
+
+#aside-left-icon:hover{
+    background-color: var(--aside-button-hover-color)
 }
 
 #aside-left-container{
@@ -281,27 +308,53 @@ main{
 #aside-left-options-menu{
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding-right: 12px;
+    margin-top: .25rem;
 }
 
 #aside-left-options-menu-entry{
     display: flex;
     align-items: center;
+    gap: 5px;
 }
+
+#aside-left-options-menu-entry-button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    border: 0px;
+    border-radius: 2rem;
+    padding-right: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+#aside-left-options-menu-entry:hover>#aside-left-options-menu-entry-button{
+    background-color: var(--aside-button-hover-color);
+}
+
 #aside-left-options-menu-entry-icon{
     height: 40px;
     width: 40px;
 }
 #aside-left-options-menu-entry-name{
     margin: 0px;
+    font-size: 1.25rem;
 }
 
 #aside-left-options-menu-button{
-    background-color: blue;
+    background-color: var(--blue-main-color);
     border-radius: 30px;
     display:flex;
     justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+#aside-left-options-menu-button:hover{
+    background-color: rgb(14, 135, 216);
 }
 #aside-left-user{
     display: grid;
@@ -309,6 +362,18 @@ main{
     grid-template-rows: 20px 20px;
     margin-left: 40px;
     margin-bottom: 20px;
+
+    border-radius: 1.7rem;
+
+    padding-left: .25rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    margin-right: 0.5rem;
+}
+
+#aside-left-user:hover{
+    background-color: var(--aside-button-hover-color)
 }
 
 #aside-left-user-icon{
@@ -351,7 +416,7 @@ main{
 }
 
 .aside-right-container{
-    background-color: gray;
+    background-color: rgb(247, 249, 249);
     margin-left: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -364,13 +429,13 @@ main{
 #aside-right-container-content{
     display: grid;
     grid-template-columns: calc(100% - 70px) 35px 35px;
-    grid-template-rows: 20px 30px 20px;
+    grid-template-rows: 20px auto 20px;
 }
 
 .right-sidebar-undertext{
     margin: 0px;
     font-size: 0.8rem;
-    color: lightgray;
+    color: var(--gray-text-color);
     grid-column: 1/2;
     grid-row: 1/2;
 }
@@ -378,7 +443,7 @@ main{
 #aside-right-container-content-title{
     margin: 0px;
     grid-column: 1/2;
-    grid-row: 2/4;
+    grid-row: 2/3;
 }
 
 #aside-right-container-content-square{
@@ -390,7 +455,7 @@ main{
 }
 
 .right-sidebar-undertext-two{
-    color: lightgray;
+    color: var(--gray-text-color);
     margin: 0px;
     grid-column: 1/2; 
     grid-row: 3/4;
@@ -425,7 +490,7 @@ column-gap: 5px;
     grid-row: 1/2;
 }
 
-#aside-right-container-user>h3{
+#aside-right-container-user>h4{
     margin: 0px;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -457,6 +522,19 @@ column-gap: 5px;
     gap: 10px;
 }
 
-#aside-right-container-title{
+.aside-right-container-title{
     margin-bottom: 0px;
+    
+}
+
+.gray-text{
+    color: var(--gray-text-color);
+}
+
+.aref{
+    text-decoration: none;
+}
+
+.blue-text{ 
+    color: var(--blue-main-color);
 }
