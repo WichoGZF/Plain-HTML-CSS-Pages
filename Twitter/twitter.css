@@ -11,7 +11,7 @@ html{
 body{
     width: 100%;
     position: absolute;
-    min-width: 1200px;
+    min-width: 1280px;
     margin: 0px;
     --header-height: 50px;
     --header-right-padding: 1px;
@@ -32,24 +32,24 @@ body{
     --main-border-color: rgb(226, 233, 233);
     --aside-button-hover-color: rgb(211, 218, 223);
 }   
-@media screen and (max-width: 1200px){
-    body{
-    --header-height: 50px;
-    --aside-right-width: 350px;
 
-    }
-}
+
 
 header{
     height: var(--header-height);
     width: calc(100% - (var(--aside-left-width) ));
-    min-width: 950px;
     position: fixed;
     left: var(--aside-left-width);
     top: 0px;
     z-index:99999;
     display:flex;
 }
+@media only screen and (max-width: 1280px) {
+    header {
+      left: 271px;
+      width: calc(1280px - 271px)
+    }
+  }
 
 #header-title{
     width: 600px;
@@ -229,6 +229,10 @@ main{
 
 }
 
+#main-showtweets-section-div:hover{ 
+    background-color: var(--main-border-color)
+}
+
 #main-posts-section{
     display: flex;
     flex-direction: column;
@@ -371,7 +375,7 @@ main{
 
 #aside-left{
     width: var(--aside-left-width);
-    min-width: 250px;
+    min-width: 275px;
     height: 100vh;
     top:0px;
     left: 0px;
@@ -451,6 +455,7 @@ main{
     color: white;
     font-weight: bold;
     margin-top: 1rem;
+    margin-right: 1rem;
 }
 
 #aside-left-options-menu-button:hover{
