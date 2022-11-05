@@ -124,6 +124,7 @@ header{
     background-color: transparent;
     border: 0px;
     font-size: 1rem;
+    outline: none;
 }
 
 
@@ -166,6 +167,7 @@ main{
 
     border: 0px;
     font-size: 1.25rem;
+    outline: none;
 }
 
 #main-post-section-input-scope{
@@ -557,7 +559,7 @@ main{
     height: 70px;
     grid-column: 2/4;
     grid-row: 1/4;
-    border-radius: 50%;
+    border-radius: 1rem;
 }
 
 .right-sidebar-undertext-two{
