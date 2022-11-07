@@ -20,27 +20,43 @@
         <![endif]-->
     <header>
         <section id="header-icon-section">
-            <img id="header-twitch-logo" src="./svg/twitch-logo.svg" />
-            <button>Browse</button>
-            <img id="header-three-dots" src="./svg/three-dots.svg" />
+            <button id="header-icon-button">
+                <img id="header-header-icon-button-logo" src="./svg/twitchlogo.svg" />
+            </button>
+            <button class="purple-link" id="header-browse">Browse</button>
+            <button class="icon-button">
+                <img class="header-icon" src="./svg/three-dots.svg" />
+            </button>
         </section>
         <section id="header-search-section">
-            <input type="search" id="header-search-input" />
-            <button><img id="header-search-input-icon" src="./svg/search.svg"></button>
+            <input placeholder="Search" type="search" id="header-search-input" />
+            <button id="header-search-button">
+                <img id="header-search-input-icon" src="./svg/search.svg">
+            </button>
         </section>
         <section id="header-icon-section">
-            <img id="header-crown-logo" src="./svg/king-icon.svg" />
-            <button>Log in</button>
-            <button>Sign Up</button>
-            <img id="header-user-icon" src="svg/user-icon.svg">
+            <button class="icon-button">
+                <img class="header-icon" src="./svg/king-icon.svg" />
+            </button>
+            <button class="top-bar-icon" id="login">Log in</button>
+            <button class="top-bar-icon" id="signup">Sign Up</button>
+            <button class="icon-button">
+                <img class="header-icon" src="svg/user-icon.svg">
+            </button>
         </section>
     </header>
     <nav>
-        <label for="nav-menu">RECOMMENDED CHANNELS</label>
+        <div id="nav-header">
+            <p id="nav-header-text">RECOMMENDED CHANNELS </p>
+            <button class="icon-button">
+                <img class="header-icon" src="./svg/close-icon.svg">
+            </button>
+
+        </div>
         <menu id="nav-menu">
             <li>
-                <div id="nav-menu-icon"></div>
-                <h3 id="nav-menu-streamer">Streamer</h3>
+                <img id="nav-menu-icon" src="./svg/person_icon.svg">
+                <h4 id="nav-menu-streamer">Streamer</h3>
                 <p id="nav-menu-game">Game</p>
                 <div id="nav-menu-viewers-div">
                     <div id="nav-menu-viewers-icon"></div>
@@ -48,8 +64,62 @@
                 </div>
             </li>
             <li>
-                <div id="nav-menu-icon"></div>
-                <h3 id="nav-menu-streamer">Streamer</h3>
+                <img id="nav-menu-icon" src="./svg/person_icon.svg">
+                <h4 id="nav-menu-streamer">Streamer</h3>
+                <p id="nav-menu-game">Game</p>
+                <div id="nav-menu-viewers-div">
+                    <div id="nav-menu-viewers-icon"></div>
+                    <p>99.9K</p>
+                </div>
+            </li>
+            <li>
+                <img id="nav-menu-icon" src="./svg/person_icon.svg">
+                <h4 id="nav-menu-streamer">Streamer</h3>
+                <p id="nav-menu-game">Game</p>
+                <div id="nav-menu-viewers-div">
+                    <div id="nav-menu-viewers-icon"></div>
+                    <p>99.9K</p>
+                </div>
+            </li>
+            <li>
+                <img id="nav-menu-icon" src="./svg/person_icon.svg">
+                <h4 id="nav-menu-streamer">Streamer</h3>
+                <p id="nav-menu-game">Game</p>
+                <div id="nav-menu-viewers-div">
+                    <div id="nav-menu-viewers-icon"></div>
+                    <p>99.9K</p>
+                </div>
+            </li>
+            <li>
+                <img id="nav-menu-icon" src="./svg/person_icon.svg">
+                <h4 id="nav-menu-streamer">Streamer</h3>
+                <p id="nav-menu-game">Game</p>
+                <div id="nav-menu-viewers-div">
+                    <div id="nav-menu-viewers-icon"></div>
+                    <p>99.9K</p>
+                </div>
+            </li>
+            <li>
+                <img id="nav-menu-icon" src="./svg/person_icon.svg">
+                <h4 id="nav-menu-streamer">Streamer</h3>
+                <p id="nav-menu-game">Game</p>
+                <div id="nav-menu-viewers-div">
+                    <div id="nav-menu-viewers-icon"></div>
+                    <p>99.9K</p>
+                </div>
+            </li>
+            <li>
+                <img id="nav-menu-icon" src="./svg/person_icon.svg">
+                <h4 id="nav-menu-streamer">Streamer</h3>
+                <p id="nav-menu-game">Game</p>
+                <div id="nav-menu-viewers-div">
+                    <div id="nav-menu-viewers-icon"></div>
+                    <p>99.9K</p>
+                </div>
+            </li>
+            <li>
+                <img id="nav-menu-icon" src="./svg/person_icon.svg">
+                <h4 id="nav-menu-streamer">Streamer</h3>
                 <p id="nav-menu-game">Game</p>
                 <div id="nav-menu-viewers-div">
                     <div id="nav-menu-viewers-icon"></div>
@@ -63,55 +133,125 @@
             <button>
                 <img id="body-top-section-left-arrow" src="./svg/left-arrow.svg" />
             </button>
-            <div id="body-top-section-video"></div>
+            <div id="body-top-section-videos">
+                <div id="body-top-section-videos-main">
+                    <div id="body-top-section-videos-main-media">
+                        <div class="live-icon">
+                            LIVE
+                        </div>
+                        <div id="hover-overlay">
+                        </div>
+                        <div id="video-options">
+                            <div id="left-side-options">
+                                <button class="video-button" id="pause">
+                                    <img class="video-button-icon" src="./svg/pause-icon.svg">
+                                </button>
+                                <button class="video-button" id="volume">
+                                    <img class="video-button-icon" src="./svg/mute-icon.svg">
+                                </button>
+                                <input type="range" id="main-volume" name="volume" min="0" max="10">
+                            </div>
+                            <div id="right-side-options">
+                                <button class="video-button" id="settings">
+                                    <img class="video-button-icon" src="./svg/setting-icon.svg">
+                                </button>
+                                <button class="video-button" id="fullscreen">
+                                    <img class="video-button-icon" src="./svg/fullscreen-icon.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="body-top-section-videos-main-textbox">
+                        <div id="main-profile-section">
+                            <img src="./svg/person_icon.svg" id="main-profile-section-icon">
+                            <div id="main-profile-section-text">
+                                <p id="main-profile-section-text-name">
+                                    Streamer
+                                </p>
+                                <p id="main-profile-section-text-game">
+                                    Game being played
+                                </p>
+                                <p id="main-profile-section-text-viewers">
+                                    9.9K viewers
+                                </p>
+                            </div>
+                        </div>
+                        <div id="icons-section">
+                            <button class="category-button">Category</button>
+                            <button class="category-button">Category</button>
+                        </div>
+                        <div id="description-section">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum interdum
+                                ipsum, vitae feugiat velit. Vivamus eu est vel mi dapibus mollis non ac lectus. Integer
+                                nec gravida magna.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="secondary-left" class="body-top-section-videos-secondary"></div>
+                <div id="tertiary-left" class="body-top-section-videos-tertiary"></div>
+                <div id="secondary-right" class="body-top-section-videos-secondary"></div>
+                <div id="tertiary-right" class="body-top-section-videos-tertiary"></div>
+
+            </div>
             <button>
                 <img id="body-top-section-right-arrow" src="./svg/right-arrow.svg" />
             </button>
         </section>
         <section id="body-channel-recommendation">
-            <label for="body-channel-recommendation-group">Some text</label>
+            <label for="body-channel-recommendation-group" class="section-title">Some text</label>
             <div id="body-channel-recommendation-group">
                 <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
+                    <div id="body-channel-recommendation-group-channel-video">
+                        <div class="live-icon" id="main-live">LIVE</div>
+                        <div class="viewers-icon">12.3K viewers</div>
+                    </div>
                     <div id="body-channel-recommendation-group-channel-info">
                         <div id="body-channel-recommendation-group-channel-info-icon"></div>
                         <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
                         <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
                         <p id="body-channel-recommendation-group-channel-info-game">Game</p>
                         <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
+                            <button>Category</button>
+                            <button>Category</button>
+                            <button>Category</button>
                         </div>
                     </div>
 
                 </div>
                 <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
+                    <div id="body-channel-recommendation-group-channel-video">
+                        <div class="live-icon" id="main-live">LIVE</div>
+                        <div class="viewers-icon">12.3K viewers</div>
+                    </div>
                     <div id="body-channel-recommendation-group-channel-info">
                         <div id="body-channel-recommendation-group-channel-info-icon"></div>
                         <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
                         <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
                         <p id="body-channel-recommendation-group-channel-info-game">Game</p>
                         <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
+                            <button>Category</button>
+                            <button>Category</button>
+                            <button>Category</button>
                         </div>
                     </div>
 
                 </div>
                 <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
+                    <div id="body-channel-recommendation-group-channel-video">
+                        <div class="live-icon" id="main-live">LIVE</div>
+                        <div class="viewers-icon">12.3K viewers</div>
+                    </div>
                     <div id="body-channel-recommendation-group-channel-info">
                         <div id="body-channel-recommendation-group-channel-info-icon"></div>
                         <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
                         <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
                         <p id="body-channel-recommendation-group-channel-info-game">Game</p>
                         <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
+                            <button>Category</button>
+                            <button>Category</button>
+                            <button>Category</button>
                         </div>
                     </div>
 
@@ -127,74 +267,6 @@
             </div>
         </section>
         <section id="body-category-recommendation">
-            <label for="body-category-recommendation-group">Some text</label>
-            <div id="body-category-recommendation-group">
-                <div id="body-category-recommendation-group-entry">
-                    <div id="body-category-recommendation-group-entry-icon"></div>
-                    <p id="body-category-recommendation-group-entry-title">Category name</p>
-                    <p id="body-category-recommendation-group-entry-viewers">44.4K viewers</p>
-                    <div id="body-category-recommendation-group-entry-tags">
-                        <button id="body-category-recommendation-group-entry-tags-tag">Tag 1</button>
-                        <button id="body-category-recommendation-group-entry-tags-tag">Tag 2</button>
-                    </div>
-                </div>
-                <div id="body-category-recommendation-group-entry">
-                    <div id="body-category-recommendation-group-entry">
-                        <div id="body-category-recommendation-group-entry-icon"></div>
-                        <p id="body-category-recommendation-group-entry-title">Category name</p>
-                        <p id="body-category-recommendation-group-entry-viewers">44.4K viewers</p>
-                        <div id="body-category-recommendation-group-entry-tags">
-                            <button id="body-category-recommendation-group-entry-tags-tag">Tag 1</button>
-                            <button id="body-category-recommendation-group-entry-tags-tag">Tag 2</button>
-                        </div>
-                    </div>
-                </div>
-                <div id="body-category-recommendation-group-entry">
-                    <div id="body-category-recommendation-group-entry">
-                        <div id="body-category-recommendation-group-entry-icon"></div>
-                        <p id="body-category-recommendation-group-entry-title">Category name</p>
-                        <p id="body-category-recommendation-group-entry-viewers">44.4K viewers</p>
-                        <div id="body-category-recommendation-group-entry-tags">
-                            <button id="body-category-recommendation-group-entry-tags-tag">Tag 1</button>
-                            <button id="body-category-recommendation-group-entry-tags-tag">Tag 2</button>
-                        </div>
-                    </div>
-                </div>
-                <div id="body-category-recommendation-group-entry">
-                    <div id="body-category-recommendation-group-entry">
-                        <div id="body-category-recommendation-group-entry-icon"></div>
-                        <p id="body-category-recommendation-group-entry-title">Category name</p>
-                        <p id="body-category-recommendation-group-entry-viewers">44.4K viewers</p>
-                        <div id="body-category-recommendation-group-entry-tags">
-                            <button id="body-category-recommendation-group-entry-tags-tag">Tag 1</button>
-                            <button id="body-category-recommendation-group-entry-tags-tag">Tag 2</button>
-                        </div>
-                    </div>
-                </div>
-                <div id="body-category-recommendation-group-entry">
-                    <div id="body-category-recommendation-group-entry">
-                        <div id="body-category-recommendation-group-entry-icon"></div>
-                        <p id="body-category-recommendation-group-entry-title">Category name</p>
-                        <p id="body-category-recommendation-group-entry-viewers">44.4K viewers</p>
-                        <div id="body-category-recommendation-group-entry-tags">
-                            <button id="body-category-recommendation-group-entry-tags-tag">Tag 1</button>
-                            <button id="body-category-recommendation-group-entry-tags-tag">Tag 2</button>
-                        </div>
-                    </div>
-                </div>
-                <div id="body-category-recommendation-group-entry">
-                    <div id="body-category-recommendation-group-entry">
-                        <div id="body-category-recommendation-group-entry-icon"></div>
-                        <p id="body-category-recommendation-group-entry-title">Category name</p>
-                        <p id="body-category-recommendation-group-entry-viewers">44.4K viewers</p>
-                        <div id="body-category-recommendation-group-entry-tags">
-                            <button id="body-category-recommendation-group-entry-tags-tag">Tag 1</button>
-                            <button id="body-category-recommendation-group-entry-tags-tag">Tag 2</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="body-category-recommendation-divider"></div>
             <div id="body-category-recommendation-tags">
                 <button id="body-category-recommendation-tags-button">Section</button>
                 <button id="body-category-recommendation-tags-button">Section</button>
@@ -202,286 +274,72 @@
                 <button id="body-category-recommendation-tags-button">Section</button>
                 <button id="body-category-recommendation-tags-button">Section</button>
             </div>
-        </section>
-        <section id="body-channel-recommendation">
-            <label for="body-channel-recommendation-group">Some text</label>
-            <div id="body-channel-recommendation-group">
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
-                        </div>
-                    </div>
+            <label for="body-category-recommendation-group" class="section-title">Some text</label>
 
+            <div id="body-category-recommendation-group">
+                <div id="body-category-recommendation-group-entry">
+                    <div id="body-category-recommendation-group-entry-icon"></div>
+                    <h3 id="body-category-recommendation-group-entry-title">Category name</h3>
+                    <p id="body-category-recommendation-group-entry-viewers">44.4K viewers</p>
+                    <div id="body-category-recommendation-group-entry-tags">
+                        <button class="category-button">Category</button>
+                        <button class="category-button">Category</button>
+                    </div>
                 </div>
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
+                <div id="body-category-recommendation-group-entry">
+                    <div id="body-category-recommendation-group-entry">
+                        <div id="body-category-recommendation-group-entry-icon"></div>
+                        <h3 id="body-category-recommendation-group-entry-title">Category name</h3>
+                        <p id="body-category-recommendation-group-entry-viewers">44.4K viewers</p>
+                        <div id="body-category-recommendation-group-entry-tags">
+                            <button class="category-button">Category</button>
+                            <button class="category-button">Category</button>
                         </div>
                     </div>
-
                 </div>
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
+                <div id="body-category-recommendation-group-entry">
+                    <div id="body-category-recommendation-group-entry">
+                        <div id="body-category-recommendation-group-entry-icon"></div>
+                        <h3 id="body-category-recommendation-group-entry-title">Category name</h3>
+                        <p id="body-category-recommendation-group-entry-viewers">44.4K viewers</p>
+                        <div id="body-category-recommendation-group-entry-tags">
+                            <button class="category-button">Category</button>
+                            <button class="category-button">Category</button>
                         </div>
                     </div>
-
                 </div>
-            </div>
-            <div id="body-channel-recommendation-divider">
-                <div id="body-channel-recommendation-divider-line"></div>
-                <button id="body-channel-recommendation-divider-button">
-                    <p>Show more </p>
-                    <img id="body-channel-recommendation-divider-button-icon" src="./svg/drop-down-purple.svg">
-                </button>
-                <div id="body-channel-recommendation-divider-line"></div>
-            </div>
-        </section>
-        <section id="body-channel-recommendation">
-            <label for="body-channel-recommendation-group">Some text</label>
-            <div id="body-channel-recommendation-group">
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
+                <div id="body-category-recommendation-group-entry">
+                    <div id="body-category-recommendation-group-entry">
+                        <div id="body-category-recommendation-group-entry-icon"></div>
+                        <h3 id="body-category-recommendation-group-entry-title">Category name</h3>
+                        <p id="body-category-recommendation-group-entry-viewers">44.4K viewers</p>
+                        <div id="body-category-recommendation-group-entry-tags">
+                            <button class="category-button">Category</button>
+                            <button class="category-button">Category</button>
                         </div>
                     </div>
-
                 </div>
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
+                <div id="body-category-recommendation-group-entry">
+                    <div id="body-category-recommendation-group-entry">
+                        <div id="body-category-recommendation-group-entry-icon"></div>
+                        <h3 id="body-category-recommendation-group-entry-title">Category name</h3>
+                        <p id="body-category-recommendation-group-entry-viewers">44.4K viewers</p>
+                        <div id="body-category-recommendation-group-entry-tags">
+                            <button class="category-button">Category</button>
+                            <button class="category-button">Category</button>
                         </div>
                     </div>
-
                 </div>
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
+                <div id="body-category-recommendation-group-entry">
+                    <div id="body-category-recommendation-group-entry">
+                        <div id="body-category-recommendation-group-entry-icon"></div>
+                        <h3 id="body-category-recommendation-group-entry-title">Category name</h3>
+                        <p id="body-category-recommendation-group-entry-viewers">44.4K viewers</p>
+                        <div id="body-category-recommendation-group-entry-tags">
+                            <button class="category-button">Category</button>
+                            <button class="category-button">Category</button>
                         </div>
                     </div>
-
-                </div>
-            </div>
-            <div id="body-channel-recommendation-divider">
-                <div id="body-channel-recommendation-divider-line"></div>
-                <button id="body-channel-recommendation-divider-button">
-                    <p>Show more </p>
-                    <img id="body-channel-recommendation-divider-button-icon" src="./svg/drop-down-purple.svg">
-                </button>
-                <div id="body-channel-recommendation-divider-line"></div>
-            </div>
-        </section>
-        <section id="body-channel-recommendation">
-            <label for="body-channel-recommendation-group">Some text</label>
-            <div id="body-channel-recommendation-group">
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
-                        </div>
-                    </div>
-
-                </div>
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
-                        </div>
-                    </div>
-
-                </div>
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div id="body-channel-recommendation-divider">
-                <div id="body-channel-recommendation-divider-line"></div>
-                <button id="body-channel-recommendation-divider-button">
-                    <p>Show more </p>
-                    <img id="body-channel-recommendation-divider-button-icon" src="./svg/drop-down-purple.svg">
-                </button>
-                <div id="body-channel-recommendation-divider-line"></div>
-            </div>
-        </section>
-        <section id="body-channel-recommendation">
-            <label for="body-channel-recommendation-group">Some text</label>
-            <div id="body-channel-recommendation-group">
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
-                        </div>
-                    </div>
-
-                </div>
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
-                        </div>
-                    </div>
-
-                </div>
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div id="body-channel-recommendation-divider">
-                <div id="body-channel-recommendation-divider-line"></div>
-                <button id="body-channel-recommendation-divider-button">
-                    <p>Show more </p>
-                    <img id="body-channel-recommendation-divider-button-icon" src="./svg/drop-down-purple.svg">
-                </button>
-                <div id="body-channel-recommendation-divider-line"></div>
-            </div>
-        </section>
-                <section id="body-channel-recommendation">
-            <label for="body-channel-recommendation-group">Some text</label>
-            <div id="body-channel-recommendation-group">
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
-                        </div>
-                    </div>
-
-                </div>
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
-                        </div>
-                    </div>
-
-                </div>
-                <div id="body-channel-recommendation-group-channel">
-                    <div id="body-channel-recommendation-group-channel-video"></div>
-                    <div id="body-channel-recommendation-group-channel-info">
-                        <div id="body-channel-recommendation-group-channel-info-icon"></div>
-                        <h3 id="body-channel-recommendation-group-channel-info-name">Stream title</h3>
-                        <p id="body-channel-recommendation-group-channel-info-streamer">Streamer</p>
-                        <p id="body-channel-recommendation-group-channel-info-game">Game</p>
-                        <div id="body-channel-recommendation-group-channel-info-tags">
-                            <button>Tag 1</button>
-                            <button>Tag 2</button>
-                            <button>Tag 3</button>
-                        </div>
-                    </div>
-
                 </div>
             </div>
             <div id="body-channel-recommendation-divider">
