@@ -7,7 +7,7 @@ html {
     /*size variables */
     --header-height: 50px;
     --footer-height: 61px;
-    --aside-height: calc(100vh - var(--header-height));
+    --aside-height: calc(100vh - (var(--footer-height) + var(--header-height)));
     --video-main-width: 750px;
     --video-main-height: 300px;
 
@@ -57,7 +57,7 @@ header {
     z-index: 9999;
 }
 
-p{
+p {
     margin: 0px;
     font-size: .9rem;
 }
@@ -75,45 +75,47 @@ p{
     flex: 1 1 0;
 }
 
-#header-search-input{
+#header-search-input {
     width: 40%;
     border-top-left-radius: .5rem;
     border-bottom-left-radius: .5rem;
     border-color: transparent;
     background-color: var(--search-bar-gray);
     padding-left: 1rem;
-    
+
 }
 
-#header-search-input:hover{
+#header-search-input:hover {
     border: #b7b6b6 2px solid;
 }
 
-#header-search-input:focus{
+#header-search-input:focus {
     outline: var(--main-purple);
     border: var(--main-purple) 2px solid;
 }
 
 
-#header-search-button{
+#header-search-button {
     border: 0px;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
 }
 
-#header-search-button:hover{ 
+#header-search-button:hover {
     background-color: var(--search-bar-gray);
 }
-#header-search-input-icon{
+
+#header-search-input-icon {
     filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(235deg) brightness(107%) contrast(107%);
 }
+
 /* Breakpoints for search bar
 700px:
 when smaller join search icon to right icon section
 and turn browser button into the copy icon.
 
 */
-#header-icon-button{
+#header-icon-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,35 +126,38 @@ and turn browser button into the copy icon.
     background-color: white;
     border: 0px;
 }
+
 #header-header-icon-button-logo {
     margin: 0px;
 }
 
-.purple-link{
+.purple-link {
     height: 100%;
     width: fit-content;
     background-color: transparent;
     border: 0px;
 }
 
-.purple-link:hover{
+.purple-link:hover {
     color: var(--purple-text);
 }
-#header-browse{ 
+
+#header-browse {
     font-size: .9rem;
     font-weight: bold;
 }
 
-#header-icon-section{
-    display: flex; 
+#header-icon-section {
+    display: flex;
     align-items: center;
     gap: .5rem;
     padding-right: .5rem;
 }
-.icon-button{ 
+
+.icon-button {
     height: 30px;
     width: 30px;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     border: 0px;
@@ -160,34 +165,34 @@ and turn browser button into the copy icon.
     border-radius: 10%;
 }
 
-.icon-button:hover{
+.icon-button:hover {
     background-color: var(--search-bar-gray);
 }
 
-.header-icon{ 
+.header-icon {
     height: 20px;
     width: 20px;
 
-    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(235deg) brightness(107%) contrast(107%); 
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(235deg) brightness(107%) contrast(107%);
 }
 
-.top-bar-icon{ 
+.top-bar-icon {
     font-weight: bold;
     padding: .5rem;
     border: 0px;
     border-radius: 5px;
 }
 
-#login:hover{
+#login:hover {
     background-color: var(--search-bar-gray);
 }
 
-#signup{
+#signup {
     background-color: var(--main-purple);
     color: white;
 }
 
-#signup:hover{
+#signup:hover {
     background-color: var(--purple-text)
 }
 
@@ -211,14 +216,14 @@ nav {
     padding: 0px;
 }
 
-#nav-header{
+#nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: .5rem;
 }
 
-#nav-header-text{
+#nav-header-text {
     font-size: .8rem;
     font-weight: 600;
 }
@@ -230,7 +235,7 @@ nav {
     padding: .5rem;
 }
 
-#nav-menu>li:hover{
+#nav-menu>li:hover {
     background-color: var(--search-bar-gray);
 }
 
@@ -326,7 +331,8 @@ main>section {
     top: calc((100% - 255px)/2);
 
 }
-.background-video{
+
+.background-video {
     transition: scale 1s;
 
 }
@@ -344,7 +350,7 @@ main>section {
     left: calc(var(--free-space-unit) * -1);
 }
 
-.background-video:hover{ 
+.background-video:hover {
     scale: 1.01;
 }
 
@@ -380,11 +386,11 @@ main>section {
     font-size: .7rem;
 }
 
-#live-icon-top{
+#live-icon-top {
     position: absolute;
 }
 
-#main-video-live{
+#main-video-live {
     position: abolute;
 }
 
@@ -401,17 +407,17 @@ main>section {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);
 }
 
-#body-top-section-videos-main-media:hover>#hover-overlay{
+#body-top-section-videos-main-media:hover>#hover-overlay {
     opacity: .3;
 }
 
-#body-top-section-videos-main-media:hover>#video-options{
+#body-top-section-videos-main-media:hover>#video-options {
     opacity: 1;
 }
 
-#video-options{
+#video-options {
     width: 100%;
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     position: absolute;
     bottom: 0px;
@@ -421,20 +427,20 @@ main>section {
 
 
 
-#left-side-options{
+#left-side-options {
     display: flex;
     align-items: center;
     padding: 5px;
 }
 
-#right-side-options{
+#right-side-options {
     display: flex;
     align-items: center;
     padding: 5px;
 }
 
-.video-button{ 
-    width: 30px; 
+.video-button {
+    width: 30px;
     height: 30px;
     background-color: transparent;
     border: 0px;
@@ -451,51 +457,51 @@ main>section {
     padding: 10px;
 }
 
-#main-profile-section{
+#main-profile-section {
     display: flex;
     gap: .5rem;
 }
 
-#main-profile-section-icon{
+#main-profile-section-icon {
     width: 50px;
     height: 50px;
     background-color: #5c16c5;
     border-radius: 50%;
 }
 
-#main-profile-section-text{
+#main-profile-section-text {
     display: flex;
     flex-direction: column;
     gap: 2px;
 
 }
 
-#main-profile-section-text-name{
+#main-profile-section-text-name {
     font-weight: bold;
     color: #772ce8;
 }
 
-#main-profile-section-text-game{
+#main-profile-section-text-game {
     color: #772ce8;
     font-size: .9rem;
 
 }
 
-#main-profile-section-text-viewers{
+#main-profile-section-text-viewers {
     display: block;
 }
 
 
-.category-button{
+.category-button {
     border-radius: 2rem;
     font-size: .8rem;
-    font-weight:bold;
+    font-weight: bold;
     border: 0px;
     color: #0e0e10;
     background-color: #efeff1;
 }
 
-.category-button:hover{
+.category-button:hover {
     background-color: var(--search-bar-gray);
 }
 
@@ -507,14 +513,15 @@ main>section {
     flex-direction: column;
 }
 
-#body-channel-recommendation>label, .section-title {
+#body-channel-recommendation>label,
+.section-title {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: .5rem;
     margin-top: .5rem;
 }
 
-.viewers-icon{
+.viewers-icon {
     background-color: black;
     height: fit-content;
     width: fit-content;
@@ -545,7 +552,17 @@ main>section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    }
+}
+
+.translate-component{
+    transition: translate .5s, box-shadow .5s;
+
+}
+
+.translate-component:hover {
+    translate: 5px -5px;
+    box-shadow: -5px 5px  var(--main-purple);
+}
 
 #body-channel-recommendation-group-channel-info {
     display: grid;
@@ -603,7 +620,7 @@ main>section {
 }
 
 #body-channel-recommendation-divider-button {
-    display: flex; 
+    display: flex;
     gap: .25rem;
     border: 0px;
     background-color: transparent;
@@ -615,8 +632,8 @@ main>section {
     font-weight: bold;
 }
 
-#body-channel-recommendation-divider-button:hover{
-    background-color: var(--search-bar-gray);   
+#body-channel-recommendation-divider-button:hover {
+    background-color: var(--search-bar-gray);
 }
 
 
@@ -671,7 +688,7 @@ main>section {
     background-color: var(--purple-category);
     border-radius: .5rem;
 
-    display: flex; 
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -684,13 +701,46 @@ main>section {
 .body-category-recommendation-tags-button>h1 {
     color: white;
 }
+
 footer {
     height: var(--footer-height);
     width: 100%;
-    top: calc(var(--aside-height));
+    top: calc(var(--aside-height) + var(--header-height));
     position: fixed;
     background-color: var(--main-footer-color);
     z-index: 9999;
+
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-leftside{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: .5rem;
+    margin-left: 1rem;
+}
+
+#footer-cat{
+    height: 40px;
+}
+
+#footer-leftside>h4{ 
+    color: white;
+}
+
+#footer-button{
+    width: fit-content;
+    background-color: white;
+    font-weight: bold;
+    flex: initial;
+    margin-right: 3rem;
+}
+
+#footer-button:hover{
+    background-color: var(--search-bar-gray);
 }
 
 @media only screen and (min-width: 1000px) {
