@@ -324,6 +324,11 @@ main>section {
     z-index: 2;
     position: absolute;
     top: calc((100% - 255px)/2);
+
+}
+.background-video{
+    transition: scale 1s;
+
 }
 
 .body-top-section-videos-tertiary {
@@ -337,6 +342,10 @@ main>section {
 
 #secondary-left {
     left: calc(var(--free-space-unit) * -1);
+}
+
+.background-video:hover{ 
+    scale: 1.01;
 }
 
 #tertiary-left {
@@ -353,13 +362,14 @@ main>section {
 
 #body-top-section-videos-main-media {
     width: 530px;
-    background-color: red;
+    background-color: pink;
     z-index: 10;
     position: relative;
 }
 
 .live-icon {
-    background-color: pink;
+    background-color: var(--main-red);
+    color: white;
     margin: 10px;
     padding: 2px;
     border-radius: 7%;
@@ -367,6 +377,11 @@ main>section {
     font-size: .8rem;
     z-index: 10;
     height: fit-content;
+    font-size: .7rem;
+}
+
+#live-icon-top{
+    position: absolute;
 }
 
 #main-video-live{
@@ -382,7 +397,6 @@ main>section {
     height: 100%;
     position: absolute;
     top: 0px;
-    z-index: 5;
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);
 }
@@ -650,11 +664,26 @@ main>section {
     gap: 10px;
 }
 
-#body-category-recommendation-tags-button {
+.body-category-recommendation-tags-button {
     flex-grow: 1;
     height: 50px;
+    border: 0px;
+    background-color: var(--purple-category);
+    border-radius: .5rem;
+
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.body-category-recommendation-tags-button:hover {
+    background-color: var(--purple-text);
+}
+
+.body-category-recommendation-tags-button>h1 {
+    color: white;
+}
 footer {
     height: var(--footer-height);
     width: 100%;
