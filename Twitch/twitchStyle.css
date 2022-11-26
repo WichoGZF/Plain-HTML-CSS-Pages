@@ -41,7 +41,7 @@ html {
 }
 
 body {
-    height: 200vh;
+    height: auto;
     margin: 0px;
     padding: 0px;
 }
@@ -164,7 +164,6 @@ and turn browser button into the copy icon.
     background-color: transparent;
     border-radius: 10%;
 }
-
 .icon-button:hover {
     background-color: var(--search-bar-gray);
 }
@@ -199,7 +198,7 @@ and turn browser button into the copy icon.
 nav {
     /*Why does the calc not work here? */
     height: var(--aside-height);
-    width: 50px;
+    width: 250px;
     top: var(--header-height);
     position: fixed;
     background-color: var(--main-aside-color);
@@ -276,10 +275,11 @@ nav {
 }
 
 main {
-    width: calc(100% - 50px - 4rem);
+   
+    width: calc(100% - 250px - 4rem);
     top: var(--header-height);
     position: absolute;
-    left: 50px;
+    left: 250px;
     display: flex;
     flex-direction: column;
     padding-left: 2rem;
@@ -743,13 +743,25 @@ footer {
     background-color: var(--search-bar-gray);
 }
 
-@media only screen and (min-width: 1000px) {
-    nav {
-        width: 250px;
+@media only screen and (max-width: 1200px) {
+    html{
+        --aside-width: 50px;
+    }
+    nav{
+        width: var(--aside-width);
+        align-items: center;
+        gap: .5rem;
+    }
+    #nav-menu-icon{
+        width: 30px;
+        height: 30px;
+    }
+    main {
+        width: calc(100% - 4rem - 50px);
+        left: 50px;
     }
 
-    main {
-        width: calc(100% - 4rem - 250px);
-        left: 250px;
+    .background-video{
+        display: none;
     }
 }
